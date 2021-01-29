@@ -1,4 +1,6 @@
 document.querySelector("body").classList.add("overflow");
+document.querySelector(".message-bg").classList.add("invisible");
+
 document.querySelector("video").play();
 document.querySelector("video").playbackRate=3;
 
@@ -17,4 +19,12 @@ document.onreadystatechange=function(){
         }, 2500);
 
       }
+}
+function showmessage(){
+  document.querySelector(".message-bg").classList.remove("invisible");
+
+}
+function hidemessage(){
+  document.querySelector(".message-bg").classList.add("invisible");
+
 }
