@@ -25,19 +25,23 @@ h3 {
 }
 
 #video {
-  height: 100px;
-  width: 100px;
-  margin-top: 20%;
-  margin-left: 47%;
-  border-radius: 10px;
+  position: absolute;
+  top: 35%;
+  left: 46%;
+  height: 8vw;
+  width: 8vw;
+  border-radius: 1vw;
   background-color: black;
 }
 
 .loader {
   background-color: rgb(30, 30, 30);
+
   position: fixed;
   height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   z-index: 10;
   top: 0;
   left: 0;
@@ -81,4 +85,7 @@ a:link{
   background-color: #2C3A47;
   color: #ffc478;
   transform: scale(1.1);
+}
+.overflow{
+  overflow: hidden;
 }
