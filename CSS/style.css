@@ -15,7 +15,7 @@ h3 {
 .text {
   width: 75vw;
   position: absolute;
-  top: 7vw;
+  top: 8vw;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -61,4 +61,24 @@ h3 {
 
 .invisible {
   display: none;
+}
+a:visited,
+a:link{
+  color: #2C3A47;
+}
+.download{
+ height: 3vw;
+ width: 5vw;
+ text-decoration: none;
+ font-size: 1.25vw;
+ background-color: #ffc478;
+ padding: 0.5vw;
+ border: 0.25vw #ffc478 solid;
+ border-radius: 5vw; 
+ transition: 400ms;
+}
+.download:hover{
+  background-color: #2C3A47;
+  color: #ffc478;
+  transform: scale(1.1);
 }
