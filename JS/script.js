@@ -1,4 +1,3 @@
-document.querySelector("body").classList.add("overflow");
 document.querySelector(".message-bg").classList.add("invisible");
 
 document.querySelector("video").play();
@@ -9,7 +8,7 @@ document.onreadystatechange=function(){
         setTimeout(function(){
         // document.querySelector("body").classList.add("invisible");
         document.querySelector(".loader").classList.add("fadeloader");
-        document.querySelector("body").classList.remove("overflow");
+        document.querySelector("body").classList.add("overflowremove");
 
         },2000)
         setInterval(() => {

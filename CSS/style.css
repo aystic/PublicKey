@@ -3,7 +3,8 @@ font-family: 'Major Mono Display', monospace; */
 body {
   background-color: #2C3A47;
   margin: 0;
-  padding: 0;;
+  padding: 0;
+  overflow: hidden;
 }
 
 h3 {
@@ -106,8 +107,8 @@ a:link{
   color: #ffc478;
   transform: scale(1.1);
 }
-.overflow{
-  overflow: hidden;
+.overflowremove{
+  overflow: visible;
 }
 .message-bg{
   position: fixed;
