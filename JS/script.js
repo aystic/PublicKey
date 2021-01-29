@@ -21,10 +21,22 @@ document.onreadystatechange=function(){
       }
 }
 function showmessage(){
-  document.querySelector(".message-bg").classList.remove("invisible");
+    setTimeout(function(){
+    document.querySelector(".message-bg").classList.add("unfadeloader");
+    },0)
+    setTimeout(() => {
+      document.querySelector(".message-bg").classList.remove("invisible");
+    },300); 
 
 }
+
 function hidemessage(){
-  document.querySelector(".message-bg").classList.add("invisible");
+    // setTimeout(() => {
+    //   document.querySelector(".message-bg").classList.add("fadeloader");
+    // },100);
+    // setTimeout(() => {
+    //   document.querySelector(".message-bg").classList.add("invisible");
+    // },500);
+      document.querySelector(".message-bg").classList.add("invisible");
 
 }
