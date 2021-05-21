@@ -1,35 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Public Key</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Fira+Code&family=Fira+Mono:wght@500&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/style.css" />
-  </head>
-  <body>
-    <div class="loader">
-      <div id="loader_animation">
-        <video
-          id="video"
-          src="./MEDIA/loader.mp4"
-          muted="muted"
-          autoplay
-          loop
-        ></video>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Public Key</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Fira+Code&family=Fira+Mono:wght@500&family=IBM+Plex+Mono&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body>
+  <div class="loader">
+    <div id="loader_animation">
+      <video id="video" src="./MEDIA/loader.mp4" muted="muted" autoplay loop></video>
     </div>
-    <div class="message-bg">
-      <div class="message">
-        <a href="#" class="cross" onclick="hidemessage()">❌ </a>
-        <img src="MEDIA/message.png" alt="What is a public PGP key?">
-      </div>
+  </div>
+  <div class="message-bg">
+    <div class="message">
+      <a href="#" class="cross" onclick="hidemessage()">❌ </a>
+      <img src="MEDIA/message.png" alt="What is a public PGP key?">
     </div>
-    <h3>My Public PGP key</h3>
-    <div class="text">
+  </div>
+  <h3>My Public PGP key</h3>
+  <div class="text">
     <a class="download" href="MEDIA/MohitPathak.asc">Download</a>
     <a class="message-btn download" href="#" onclick="showmessage()">What is Public PGP key?</a>
+<<<<<<< HEAD
+    <p> -----BEGIN PGP PUBLIC KEY BLOCK-----</p>
+    <br>
+    mQINBGCoIcABEAC1+tiZKuwFeY1CF0IjShtUdleZ2WPs+TAvio4fZskXh9PJkjD3<br />
+    JrK0FUOpySaaKpy0FCO57Sa6oWvyIqPZsrV85TcqfdOpHM12afy2Sp+U6+zr/8H+<br />
+    hKmsmu9XwxoICVjBHK7ad+F9l6I9VsIUnEIcvSl4Dhmtj0CFVcpmoCpHB4MOJ5gO<br />
+    Qb+mIDPTKSN06M55xldhP4XnOVVao3jpS/VcMAyl5xffx4mab2A5+mrcASdiQAEt<br />
+    fxiw+R3xq4JHundEmWlcwtjSGQeuvAHxOX3Q5773U3UhcJ4/u6RMBg+9VHontmSN<br />
+    8aH2wAD5in45W+Rvb5ZNoyAEJSfhhghFLZVruQ4yKs6WMoliHipUsgR3OAuMCMvy<br />
+    y8Tjc143tsg3ptARt7cezpTxLQMbtANG85nJbn7pqcAbJny2f7Bz2y+5O2OcOvpP<br />
+    wdXTSwXAJe5xCrOEJeTPIWb3TVXY3bcpidN8dOCuleHy5O4SsRqNeoEAmuKPSrdP<br />
+    wbGg3Fho8Jwx0JQ9BFOBVE9ZdDgcJ6hQhr9GLWDQYzQO5U9+x8eGXv/WxAJQEURM<br />
+    FlQxOQhkAICYKyfIwbmPXJqMkVv0d35evKdCQ7E1SCQpc2udcTQyBilaLQT87Fl8<br />
+    zsCGzqL9NWAAJhkHASMKRbjn5EDQCHKuxlZ93y974o/V5ORO10feRCzCOQARAQAB<br />
+    tCJNb2hpdCBQYXRoYWsgPGl0c3Btb2hpdEBnbWFpbC5jb20+iQJOBBMBCAA4FiEE<br />
+    8xCB6+k+XO7HFfxlXfC3ahuKeQQFAmCoIcACGyMFCwkIBwIGFQoJCAsCBBYCAwEC<br />
+    HgECF4AACgkQXfC3ahuKeQQFvQ/9G0M/3dyOocwFxVO2Dn2F+ZpSLxGXyi2Z8XpQ<br />
+    jVMuYBZJGTFyswsP6R1ldgFHJUiV/mO4pHiBfIrZmmJNtn7LnsoQOpvYvDWQoqYd<br />
+    0jvb9I/FlAwrGcCuMHdfu7i+vwF0CuiTK6JErZU2rE0+lxlOQC/QO5DET9hpF0IT<br />
+    vDOV2QYQtFLKqdyJhEDtqAoiv0I/V8qaTKnTOt/Hsia6NG7JJ2xecHRgPveVSzQc<br />
+    z21odHgqtiHkotQuVTrv9o2kiSSIIFJZ8/I6c7yGx8mwEWtBlhkGOPupKkZXV+9T<br />
+    2Oumn7masXSGWKpN5Q0freQITgNODt25jwoCAqsVMr5arLGFIFHuAqVg95AvPEUn<br />
+    PnnXwbzXXHZtM+ZrnvVqNiLgMJbdzV1lZQD+VS99tTzYk8rq/kBrpOa+Lx3Tx2+j<br />
+    +Rd5C/PD+6xVTjN/Flc8VBr5vPNV/nIjZwwAB0CuKK7aweiRue9n8PyQVRRF18qy<br />
+    P5ubm/IoSo6bYi+anyNDvRwpUlS4S0mgOTt371/TzXyMka+vKtlyxkooLLyRlofh<br />
+    5J6XFP3jImPPgTYH1hfAA1F0ZP4dTAfisMf97y02g7nijAIThP43p5nmzr9WzThm<br />
+    u4KduQm25afV1qu3hO66whI3ai2Y5BPNFOesfUNAOGIF3wBDblrF+EEUu4My0VfC<br />
+    dfkwVWS5Ag0EYKghwAEQANQdCpxLhyvdI8dD5LJ7A6RHZ+ls91OmIKzISOEzYnfF<br />
+    cGAV2R/c1Xn0JbzzlsaHbjY/kaKlwOjcIWGrO5JO/y2SUKjYKGCTsVlZ79twW8iF<br />
+    hz/qG1hMxFESuGKe4uyBe2dsyvUlRkujq2mJOu9M1OogQQLjNqYElIxp/5IJTuWY<br />
+    9tCtBKqUmuZ7IWQtKK3+J0uclsPL498BRqgVr8G+p+zIuF9shwbSZV1YxKierv1b<br />
+    cU0Fmzrlep/0TeBPF/xCFrbyczNBJLuSWJOqPJdEsDg4xAEXGWU3ek7PThUgoH7Z<br />
+    TVpvJ4V3mfNSjDNtI/uOgjBomplO0eoDeRoh26U2E2Moz+vxCDYjaTvQNOpfI9IJ<br />
+    /APhpWYUFXx8zZFtXKCM5oaroXsw7wtslGQEuJ9e3zJZi8Vql0v/u7VCBRYXtLg0<br />
+    p1XChC21unhc/Vj9ziX/m+DTcvd7evSbM1sEHV/l16VM8Ja+V6VGOpZ5ddyXsHig<br />
+    WxsKgVB7Pfd2G6xPjJJH/YrIob2IgGiLyFln8cRYOyzSD7xeE+bwBlG3D8kmCdtJ<br />
+    XC02Zd9Xv9YDdMwnWkdxFlSKtXTHUfc2LeGYI/uvWuhvejAUaTcaWP4CbqojfgHP<br />
+    gYFYlr9CPvtg7O/f5rFmfrG4D8RqpkRTrgOozebBWe7bhVqYZrdbzc6o8pb5bnlz<br />
+    ABEBAAGJAjYEGAEIACAWIQTzEIHr6T5c7scV/GVd8LdqG4p5BAUCYKghwAIbDAAK<br />
+    CRBd8LdqG4p5BFWxD/9/CAboZMFsdyNpMN0+iqwmx8zxNQxLqpsXRP8cmEn63APZ<br />
+    ZQYbfFhewK8QZdZxGSTlG8eGMwv8j2WHobVjBhpwc8vso1QE80ylI1TWg1Wd+Y8d<br />
+    6FIyiwmQH62R4xlgb+hVKymJQyPfNPts32utOPqapuO6IeVmNcYmViudwGVNYgFl<br />
+    tMgovn7g/o87pDYscOTChyjljwlwnleQUNuZrT7hrXm4SxZQbsZRnMy4PT9hvhhb<br />
+    7PeN+ydwSv4Dn2feg7soZT5u2ax3dFRp7Er6G0QbC6VFYtUIrURDVuf52TQ3yHws<br />
+    nGXDyqHVw4b2iGX3qc/Vdk31jSBDhJsCPy7TU3+HGFwXJ1FYg9/5/V84sxmn6XkW<br />
+    uGDB/UXRNCxm+6e56G7FrBZTdvfuo0gYyIvmbI65qjjsJs9PPdm1UYdx+QzFWBGR<br />
+    B3CfEyULyCDspsZByq4Xz8DwBCSeKoU3cCr50XhrjTAchGnCRdXJCFUp9cjh+YyH<br />
+    yveEu/8mPDwS0Z29RjxrS6AP8BGfcDpAM9Ybb9lVF8LCFS3bTpgUK3Dw3noRTEY2<br />
+    I6Zx9nszAYrwXmZWXVMukvcFFIQ+yRJEFUH6IIY+0YJlRNttWlzWf3YEjkKuqGUQ<br />
+    VdgaJZHpYEFGpSxccXLwhKsqVSAdSOrRx+0NiVoKveVUoXTVD7C1/xiDmKeM1w==<br />
+    =7ddO<br>
+    <br>
+    <p>-----END PGP PUBLIC KEY BLOCK-----</p>
+
+  </div>
+  <script src="./JS/script.js"></script>
+</body>
+
+</html>
+=======
       <p>-----BEGIN PGP PUBLIC KEY BLOCK-----</p>
       <br>
       mQINBGCoIcABEAC1+tiZKuwFeY1CF0IjShtUdleZ2WPs+TAvio4fZskXh9PJkjD3<br>
@@ -86,3 +144,4 @@
     <script src="./JS/script.js"></script>
   </body>
 </html>
+>>>>>>> 5ba80f88246597a55eae61d1e5c430138220a025
